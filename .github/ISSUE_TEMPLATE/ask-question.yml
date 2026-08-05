@@ -1,0 +1,20 @@
+name: "Ask a Question"
+description: "Use this if you have a general question about IMIN."
+title: "Question: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: "What is your question?"
+      description: "Please ask simply and clearly."
+      placeholder: "I was wondering if..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "What have you already checked?"
+      description: "Did you read the README or check the workspace folder first?"
+      placeholder: "I read the README but couldn't find..."
