@@ -1,0 +1,28 @@
+name: "Bug or Problem"
+description: "Use this if a file, script, or link in the repository is broken."
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened?"
+      description: "Describe the problem simply."
+      placeholder: "When I click on the directory link, it gives me a 404 error."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "How can we see the problem ourselves?"
+      placeholder: "1. Go to the main page. 2. Click on 'workspace'. 3. See error."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots (Optional)"
+      description: "You can drag and drop an image into this box after the issue is created."
