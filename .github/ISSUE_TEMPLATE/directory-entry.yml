@@ -1,0 +1,57 @@
+name: "Directory Entry"
+description: "Use this to add or update your public IMIN directory listing."
+title: "Directory Entry: "
+labels: ["directory-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Directory Entry Request
+        Fill this out to get your profile added to the IMIN public registry.
+
+  - type: input
+    id: alias
+    attributes:
+      label: "Display Name / Alias"
+      placeholder: "e.g., The Faceless Historian"
+    validations:
+      required: true
+
+  - type: input
+    id: niche
+    attributes:
+      label: "Your Niche"
+      placeholder: "e.g., Islamic History & Storytelling"
+    validations:
+      required: true
+
+  - type: textarea
+    id: links
+    attributes:
+      label: "Your Platform Links"
+      description: "Paste your YouTube, Instagram, Podcast, or Website links here."
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: "Are you open to collaboration?"
+      options:
+        - "Yes, open for collaboration"
+        - "Available for mentoring only"
+        - "Busy right now"
+        - "Just observing and learning"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: "Confirmation"
+      options:
+        - label: "My content follows IMIN faceless and music-free guidelines."
+          required: true
+        - label: "I am okay with this information being listed in the public IMIN directory."
+          required: true
