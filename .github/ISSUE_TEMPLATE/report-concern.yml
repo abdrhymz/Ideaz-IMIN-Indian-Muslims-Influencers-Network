@@ -1,0 +1,44 @@
+name: "Report a Concern"
+description: "Use this to report content, behavior, or ethical concerns."
+title: "Concern: "
+labels: ["concern"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Report a Concern
+        Please be calm, fair, and honest. *Note: GitHub issues are public. If this is highly sensitive, please email us directly instead.*
+
+  - type: dropdown
+    id: concern-type
+    attributes:
+      label: "What is the concern about?"
+      options:
+        - "Content issue (not faceless/has music)"
+        - "Ethical business issue (haram promotion)"
+        - "Copyright / Plagiarism issue"
+        - "Member behavior / Disrespect"
+        - "Misinformation"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Please explain what happened."
+      description: "Provide links or file names if possible."
+      placeholder: "In the file 'member-xyz.yml', the user linked a channel that uses music..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: "Do you want your identity kept private?"
+      description: "If yes, admins will redact your name when discussing this."
+      options:
+        - "Yes, keep it private"
+        - "No, I don't mind"
+    validations:
+      required: true
