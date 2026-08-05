@@ -1,0 +1,55 @@
+name: "Collaboration Request"
+description: "Use this if you want to find partners for a halal, ethical project."
+title: "Collaboration: "
+labels: ["collaboration"]
+body:
+  - type: input
+    id: project-name
+    attributes:
+      label: "Project Name"
+      description: "If you don't have a name yet, just write 'Untitled'."
+      placeholder: "e.g., Ramadan Typography Series"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-desc
+    attributes:
+      label: "What is the project?"
+      description: "Explain it simply. What is the goal?"
+      placeholder: "I want to create a 30-day video series using voice-over and motion graphics..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: skills-needed
+    attributes:
+      label: "What skills do you need help with?"
+      description: "e.g., scriptwriter, voice artist, video editor, thumbnail designer."
+      placeholder: "I need help with..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: payment
+    attributes:
+      label: "Is this paid, volunteer, or profit-sharing?"
+      options:
+        - "Volunteer (Sadaqah/For the sake of Allah)"
+        - "Paid Project"
+        - "Profit-Sharing"
+        - "Not decided yet"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ethics
+    attributes:
+      label: "Halal & Ethics Check"
+      options:
+        - label: "This project does not involve haram products or services."
+          required: true
+        - label: "This project follows IMIN faceless and music-free guidelines."
+          required: true
+        - label: "This project is honest, transparent, and respects Islamic ethics."
+          required: true
