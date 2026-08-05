@@ -3,9 +3,9 @@
   In the name of Allah, the Most Gracious, the Most Merciful
 </p>
 
-<p align="center">
-  <img src="assets/imin-logo-placeholder.png" alt="IMIN Logo" width="200"/>
-</p>
+
+[![](https://res.cloudinary.com/lgdc3oav/image/upload/v1785958055/imin_mac6wo.png)](https://az-imscn.netlify.app/)
+
 
 <h1 align="center">IMIN — Indian Muslims Influencer Network</h1>
 
