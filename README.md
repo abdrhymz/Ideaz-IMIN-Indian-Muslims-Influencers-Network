@@ -4,7 +4,7 @@
 </p>
 
 
-[![](https://res.cloudinary.com/lgdc3oav/image/upload/v1785958055/imin_mac6wo.png)](https://az-imscn.netlify.app/)
+[![](https://res.cloudinary.com/lgdc3oav/image/upload/v1785958055/imin_mac6wo.png)](https://az-imin.netlify.app/)
 
 
 <h1 align="center">IMIN — Indian Muslims Influencer Network</h1>
